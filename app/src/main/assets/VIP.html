@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0,minimal-ui">
+    <!--移动端网页模式 禁止用户缩放屏幕 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <style media="screen">
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 100%;
+        }
+
+        .vip_top {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            position: relative;
+            background: -webkit-linear-gradient(#FF4643, #FF714C);
+            background: linear-gradient(#FF4643, #FF714C);
+        }
+
+        .vip_top_title {
+            color: #fff;
+            margin: 10px;
+            font-size: 14px;
+        }
+
+        .speedWrap {
+            width: 100%;
+            height: 5px;
+            background: #FF9D91;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        .speedProgress {
+            width: 0;
+            height: 5px;
+            border-radius: 2.5px;
+            background: #FFF;
+        }
+
+        .lv {
+            width: 50px;
+            line-height: 30px;
+            position: absolute;
+            color: #FF9D91;
+            font-style: italic;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .lvOne {
+            left: 13%;
+        }
+
+        .lvTwo {
+            left: 46%;
+        }
+
+        .lvThree {
+            left: 76%;
+        }
+
+        .circular {
+            width: 15px;
+            height: 15px;
+            background: #FF9D91;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .main_lvWrap {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+        }
+
+        .main_lvTitle {
+            width: 75%;
+            margin: 0 auto;
+            color: #FF4643;
+            text-align: center;
+        }
+
+        .main_lvTitle img {
+            height: 2px;
+            width: 35%;
+        }
+
+        .main_lvContent {
+            width: 75%;
+            height: 76px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 33% 33% 33%; /*横向排列宽度*/
+            grid-gap: 0; /*元素之间的空隙间距*/
+            grid-template-rows: 80px;
+        }
+
+        .main_privilege {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .main_privilege img {
+            width: 35px;
+            display: block;
+            margin: 4px auto;
+        }
+
+        .main_privilege span {
+            color: #666;
+            font-size: 14px;
+
+        }
+
+        .main_lvWrapThree {
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="vip_top">
+        <p class="vip_top_title">我的等级</p>
+        <!-- 进度条背景 -->
+        <div class="speedWrap">
+            <!-- 进度条进度 -->
+            <div class="speedProgress"></div>
+        </div>
+        <!-- 第一个等级 -->
+        <div class="lvOne lv">
+            <!-- 等级级别 -->
+            <span class="lv_num">Lv1</span>
+            <!-- 等级标示（圆） -->
+            <div class="circular"></div>
+            <!-- 等级需要的积分 -->
+            <span class="mark">1000</span>
+        </div>
+        <!-- 第二个等级 -->
+        <div class="lvTwo lv">
+            <span class="lv_num">Lv2</span>
+            <div class="circular"></div>
+            <span class="mark">5000</span>
+        </div>
+        <!-- 第三个等级 -->
+        <div class="lvThree lv">
+            <span class="lv_num">Lv3</span>
+            <div class="circular"></div>
+            <span class="mark">10000</span>
+        </div>
+    </div>
+    <main>
+        <div class="main_lvWrap">
+            <div class="main_lvTitle">
+                <img src="./imgs/left.png" alt="">
+                <span>Lv1特权</span>
+                <img src="./imgs/right.png" alt="">
+            </div>
+            <div class="main_lvContent">
+                <div class="main_privilege">
+                    <img src="./imgs/cake.png" alt="">
+                    <span>生日5倍积分</span>
+                </div>
+                <div class="main_privilege">
+                    <img src="./imgs/fast.png" alt="">
+                    <span>极速退款</span>
+                </div>
+            </div>
+        </div>
+        <div class="main_lvWrap">
+            <div class="main_lvTitle">
+                <img src="./imgs/left.png" alt="">
+                <span>Lv2特权</span>
+                <img src="./imgs/right.png" alt="">
+            </div>
+            <div class="main_lvContent">
+                <div class="main_privilege">
+                    <img src="./imgs/cake.png" alt="">
+                    <span>生日5倍积分</span>
+                </div>
+                <div class="main_privilege">
+                    <img src="./imgs/fast.png" alt="">
+                    <span>极速退款</span>
+                </div>
+                <div class="main_privilege">
+                    <img src="./imgs/discount_eight.png" alt="">
+                    <span>购物享8折</span>
+                </div>
+            </div>
+        </div>
+        <div class="main_lvWrap main_lvWrapThree">
+            <div class="main_lvTitle">
+                <img src="./imgs/left.png" alt="">
+                <span>Lv3特权</span>
+                <img src="./imgs/right.png" alt="">
+            </div>
+            <div class="main_lvContent">
+                <div class="main_privilege">
+                    <img src="./imgs/cake.png" alt="">
+                    <span>生日5倍积分</span>
+                </div>
+                <div class="main_privilege">
+                    <img src="./imgs/fast.png" alt="">
+                    <span>极速退款</span>
+                </div>
+                <div class="main_privilege">
+                    <img src="./imgs/discount_eight.png" alt="">
+                    <span>购物享8折</span>
+                </div>
+                <div class="main_privilege">
+                    <img src="./imgs/car.png" alt="">
+                    <span>购物包邮</span>
+                </div>
+                <div class="main_privilege">
+                    <img src="./imgs/plane.png" alt="">
+                    <span>积分兑里程</span>
+                </div>
+            </div>
+        </div>
+        <div class="main_lvWrap">
+            <div class="main_lvTitle">
+                <img src="./imgs/left.png" alt="">
+                <span>Lv4特权</span>
+                <img src="./imgs/right.png" alt="">
+            </div>
+            <div class="main_lvContent">
+                <div class="main_privilege">
+                    <img src="./imgs/cake.png" alt="">
+                    <span>生日5倍积分</span>
+                </div>
+                <div class="main_privilege">
+                    <img src="./imgs/fast.png" alt="">
+                    <span>极速退款</span>
+                </div>
+                <div class="main_privilege">
+                    <img src="./imgs/discount_eight.png" alt="">
+                    <span>购物享8折</span>
+                </div>
+            </div>
+        </div>
+        <div class="main_lvWrap">
+            <div class="main_lvTitle">
+                <img src="./imgs/left.png" alt="">
+                <span>Lv5特权</span>
+                <img src="./imgs/right.png" alt="">
+            </div>
+            <div class="main_lvContent">
+                <div class="main_privilege">
+                    <img src="./imgs/cake.png" alt="">
+                    <span>生日5倍积分</span>
+                </div>
+                <div class="main_privilege">
+                    <img src="./imgs/fast.png" alt="">
+                    <span>极速退款</span>
+                </div>
+                <div class="main_privilege">
+                    <img src="./imgs/discount_eight.png" alt="">
+                    <span>购物享8折</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+<script src="./js/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    // function getIntegral(integral) {
+    //   useIntegral(integral)
+    // }
+    // function () {
+    //   // ...
+    // }
+    function getToken() {
+        $.ajax({
+            type: 'POST',
+            crossDomain: true,
+            url: url,
+            data: JSON.stringify({"token": "c6697c0c-b557-4b41-9f40-6f3c78636576"}),
+            dataType: 'json',
+            contentType: "application/json;charset=utf-8",
+            contentType: "application/json",
+            withCredentials: true,
+            success: function (result) {
+                console.log(result);
+            },
+            error: function (data) {
+                console.log(data);
+            }
+        })
+    }
+
+    var integral = 10010;
+    var Lv0 = integral > 0 && integral < 1000;
+    var Lv1 = integral >= 1000 && integral < 5000;
+    var Lv2 = integral >= 5000 && integral < 10000;
+    var Lv3 = integral >= 10000;
+    if (Lv0) {
+        if (integral > 0 && integral < 300) {
+            $('.speedProgress').animate({'width': '7%'}, 1000);
+        }
+        if (integral >= 300 && integral < 600) {
+            $('.speedProgress').animate({'width': '15%'}, 1000);
+        }
+        if (integral >= 600 && integral < 1000) {
+            $('.speedProgress').animate({'width': '18%'}, 1000);
+        }
+    }
+    if (Lv1) {
+        $('.speedProgress').animate({'width': '21%'}, 2000);
+        if (integral >= 2000 && integral < 3000) {
+            $('.speedProgress').animate({'width': '29%'}, 2000);
+        }
+        if (integral >= 3000 && integral < 4000) {
+            $('.speedProgress').animate({'width': '37%'}, 2000);
+        }
+        if (integral >= 4000 && integral < 5000) {
+            $('.speedProgress').animate({'width': '45%'}, 2000);
+        }
+        setTimeout(function () {
+            $('.lvOne').css({'color': '#FCDC01'});
+            $('.lvOne .circular').css({'background': '#FCDC01'});
+        }, 1700);
+    }
+    if (Lv2) {
+        $('.speedProgress').animate({'width': '52%'}, 2000);
+        if (integral >= 6000 && integral < 7000) {
+            $('.speedProgress').animate({'width': '59%'}, 2000);
+        }
+        if (integral >= 7000 && integral < 8000) {
+            $('.speedProgress').animate({'width': '66%'}, 2000);
+        }
+        if (integral >= 8000 && integral < 9000) {
+            $('.speedProgress').animate({'width': '73%'}, 2000);
+        }
+        if (integral >= 9000 && integral < 10000) {
+            $('.speedProgress').animate({'width': '80%'}, 2000);
+        }
+        setTimeout(function () {
+            $('.lvOne').css({'color': '#FFF'});
+            $('.lvOne .circular').css({'background': '#FFF'});
+        }, 900)
+        setTimeout(function () {
+            $('.lvTwo').css({'color': '#FCDC01'});
+            $('.lvTwo .circular').css({'background': '#FCDC01'});
+        }, 1700);
+    }
+    if (Lv3) {
+        $('.speedProgress').animate({'width': '84%'}, 2000);
+        if (integral >= 11000 && integral < 12000) {
+            $('.speedProgress').animate({'width': '92%'}, 2000);
+        }
+        setTimeout(function () {
+            $('.lvOne').css({'color': '#FFF'});
+            $('.lvOne .circular').css({'background': '#FFF'});
+        }, 700)
+        setTimeout(function () {
+            $('.lvTwo').css({'color': '#FFF'});
+            $('.lvTwo .circular').css({'background': '#FFF'});
+        }, 1200)
+        setTimeout(function () {
+            $('.lvThree').css({'color': '#FCDC01'});
+            $('.lvThree .circular').css({'background': '#FCDC01'});
+        }, 1700)
+    }
+</script>
+</html>

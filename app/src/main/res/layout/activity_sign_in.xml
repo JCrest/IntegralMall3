@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_sign"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mall_bg">
+
+
+    <com.csii.integralmall.view.ObservableScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_sign_head"
+                android:layout_width="match_parent"
+                android:layout_height="242dp"
+                android:background="@drawable/bg_qd">
+
+
+                <!--rule start-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="79dp"
+                    android:gravity="right|center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/bg_rule" />
+                </LinearLayout>
+                <!--rule end-->
+                <!--sign number start-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="63dp"
+                    android:layout_marginRight="63dp"
+                    android:layout_marginTop="179dp"
+                    android:background="@drawable/bg_people"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mall_head_today"
+                            android:textColor="@color/mall_head_t"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_sign_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mall_head_count"
+                            android:textColor="@color/mall_head_num"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mall_head_signed"
+                            android:textColor="@color/mall_head_t"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--sign number end-->
+
+
+            </RelativeLayout>
+
+            <!--calendar sign start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/calendar_bg"
+                    android:padding="10dp">
+
+                    <com.csii.integralmall.view.CustomCalendar
+                        android:id="@+id/cal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        app:mCurrentBg="#6E6E6E"
+                        app:mCurrentBgDashPath="@array/customCalendar_currentDay_bg_DashPath"
+                        app:mCurrentBgStrokeWidth="0.5dip"
+
+                        app:mLineSpac="12dip"
+                        app:mMonthRowL="@drawable/custom_calendar_row_left"
+                        app:mMonthRowR="@drawable/custom_calendar_row_right"
+                        app:mMonthRowSpac="20dip"
+
+                        app:mMonthSpac="10dip"
+                        app:mSelectBg="@color/cal_signed_day_bg"
+                        app:mSelectRadius="10dp"
+                        app:mSelectTextColor="#ffffff"
+                        app:mSelectWeekTextColor="#f67633"
+                        app:mTextColorDay="#686768"
+                        app:mTextColorMonth="#4b4b4b"
+                        app:mTextColorPreFinish="#fc7451"
+
+                        app:mTextColorPreNull="#ff00"
+                        app:mTextColorPreUnFinish="#60ba8d"
+                        app:mTextColorWeek="#9e9e9d"
+
+                        app:mTextSizeDay="13sp"
+                        app:mTextSizeMonth="20sp"
+                        app:mTextSizePre="10sp"
+                        app:mTextSizeWeek="15sp"
+                        app:mTextSpac="5dip" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_sign_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    tools:text="@string/mall_cal_sig_num"
+                    android:textColor="@color/mall_cal_signed"
+                    android:textSize="14sp" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.csii.integralmall.view.ShadowLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:shadowColor="#99E32724"
+                        app:shadowDx="0dp"
+                        app:shadowDy="0dp"
+                        app:shadowRadius="5dp"
+                        app:shadowSide="all">
+                        <TextView
+                            android:id="@+id/tv_signed"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/sign_button"
+                            android:gravity="center"
+                            android:text="@string/mall_click_sign"
+                            android:textColor="@color/mall_title_text"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+                    </com.csii.integralmall.view.ShadowLayout>
+
+                    <com.csii.integralmall.view.ShadowLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:shadowColor="#99666666"
+                        app:shadowDx="0dp"
+                        app:shadowDy="0dp"
+                        app:shadowRadius="5dp"
+                        app:shadowSide="all">
+
+                        <TextView
+                            android:id="@+id/tv_disable_signed"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/disable_button"
+                            android:gravity="center"
+                            android:text="已签到"
+                            android:textColor="@color/mall_title_text"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </com.csii.integralmall.view.ShadowLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+            <!--calendar sign end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mall_sawtooh_bg"
+                android:orientation="vertical">
+
+                <com.csii.integralmall.view.SawtoothView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/mall_more_welfare"
+                    android:textColor="@color/mall_title_text"
+                    android:textSize="15sp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/bg_act_one" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/bg_act_two" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.csii.integralmall.view.ObservableScrollView>
+    <!--mall title start-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_title"
+            android:layout_width="match_parent"
+            android:layout_height="64dp" />
+
+        <RelativeLayout
+            android:id="@+id/mall_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/tv_title_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/sign_in"
+                android:textColor="@color/mall_title_text"
+                android:textSize="17sp" />
+
+
+            <ImageButton
+                android:id="@+id/ib_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/nav_back_white" />
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/tv_title_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/nav_knapsack" />
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+    </FrameLayout>
+    <!--mall title end-->
+</RelativeLayout>

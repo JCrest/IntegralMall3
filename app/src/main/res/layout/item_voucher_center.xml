@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/ll_voucher_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/voucher_center_wireframe"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            android:id="@+id/tv_voucher_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00A8FF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:text="10元" />
+
+        <TextView
+            android:id="@+id/tv_voucher_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:textColor="#00A8FF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            tools:text="200积分兑换" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hot"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="myAppTitle">#FFFFFF</color>
+    <color name="titleTextC">#333333</color>
+    <color name="titleTextR">#F5562C</color>
+    <color name="titleTextRight">#666666</color>
+    <color name="passwordManager">#666666</color>
+    <color name="isWechat">#FF2826</color>
+
+    <color name="feedBack">#cccccc</color>
+    <color name="disableButton">#cccccc</color>
+
+    <color name="person_centered_bg">#F0F0F0</color>
+    <color name="title_it19">#EB4A3B</color>
+    <color name="radio_group_bg">#FFFFFF</color>
+    <color name="radio_button_bg">#FFFFFF</color>
+    <color name="radio_button_text">#999999</color>
+    <color name="radio_button_text_selector">#FF9579</color>
+    <color name="user_name_color">#FFFFFF</color>
+    <color name="my_order_text_color">#333333</color>
+    <color name="my_order_bg">#FFFFFF</color>
+    <color name="cutting_line">#E5E5E5</color>
+
+    <color name="mall_bg">#FFF996</color>
+    <color name="mall_title_text">#ffffff</color>
+    <color name="mall_head_t">#900C23</color>
+    <color name="mall_head_num">#FF0000</color>
+    <color name="mall_cal_signed">#666666</color>
+    <color name="calendar_bg">#60FE673F</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="calendar_moth_day_bg">#FFFFFF</color>
+    <color name="cal_signed_day_bg">#FFD9C0</color>
+
+
+    <color name="my_integral_bg">#F0F0F0</color>
+    <color name="tot_int_tex">#FFFFFF</color>
+    <color name="signed_integral">#F5562C</color>
+    <color name="integral_rule">#CCFFFFFF</color>
+    <color name="earn_points">#666666</color>
+    <color name="wonderful_activity">#333333</color>
+    <color name="gv_goodslist_bg">#FFFFFF</color>
+    <color name="gv_integral_price">#F5562C</color>
+    <color name="gv_tv_integral">#696969</color>
+    <color name="gv_product_name">#666666</color>
+    <color name="immediately_change">#F5562C</color>
+    <color name="tv_immediately_change">#FFFFFF</color>
+    <color name="tv_disable_change">#cccccc</color>
+
+
+    <color name="message_bg">#F0F0F0</color>
+    <color name="mes_tab_bg">#FFFFFF</color>
+    <color name="tab_indiatorCor">#E32724</color>
+    <color name="tab_text_cor">#333333</color>
+    <color name="my_message_bg">#F0F0F0</color>
+    <color name="message_list_bg">#FFFFFF</color>
+    <color name="my_messageTitle">#333333</color>
+    <color name="my_messageData">#999999</color>
+
+    <color name="btn_add_address">#FFFFFF</color>
+    <color name="contact_person">#333333</color>
+    <color name="click_select">#cccccc</color>
+    <color name="et_shipping_address">#999999</color>
+
+    <color name="home_tvLoca">#FFFFFF</color>
+    <color name="home_tvLoca_gray">#666666</color>
+    <color name="home_et_search">#FFFFFF</color>
+
+
+    <color name="rv_enjoy_big_brand">#160F05</color>
+    <color name="sort_color_opacity_1">#99E1C38C</color>
+    <color name="sort_color_opacity_2">#99A8C7F9</color>
+    <color name="sort_color_1">#E1C38C</color>
+    <color name="sort_color_2">#A8C7F9</color>
+    <color name="sort_color_3">#A8F9DD</color>
+    <color name="sort_color_opacity_3">#99A8F9DD</color>
+
+    <color name="E5E5E5">#E5E5E5</color>
+    <color name="c333333">#333333</color>
+    <color name="F5562C">#F5562C</color>
+    <color name="c999999">#999999</color>
+    <color name="F0F0F0">#F0F0F0</color>
+    <color name="FFFFFF">#FFFFFF</color>
+    <color name="c666666">#666666</color>
+    <color name="FDDDD5">#FDDDD5</color>
+    <color name="c888888">#888888</color>
+    <color name="c6c6c6c">#6c6c6c</color>
+
+</resources>

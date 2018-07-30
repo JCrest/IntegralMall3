@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.csii.integralmall">
+
+
+    <!-- Normal Permissions 不需要运行时注册 -->
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+
+    <!-- 不是SDK需要的权限，是示例中的后台唤醒定位需要的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 需要运行时注册的权限 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于提高GPS定位速度 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取缓存数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 更改设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 3.2.0版本增加 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 3.2.0版本增加 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+
+    <application
+        android:name=".common.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.csii.integralmall.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+
+        <!-- 设置key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f6b9a5581f633ea8cec5cb5f015cfbdd" />
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.personalData.PersonalDataActivity"
+            android:theme="@style/MyAppTheme">
+
+        </activity>
+        <activity
+            android:name=".activity.personalData.activity_personal_data.settingNickname"
+            android:theme="@style/MyAppTheme">
+
+        </activity>
+        <activity
+            android:name=".activity.personalData.activity_personal_data.changePassword"
+            android:theme="@style/MyAppTheme">
+
+        </activity>
+        <activity
+            android:name=".activity.personalData.activity_personal_data.changeNumber"
+            android:theme="@style/MyAppTheme">
+
+        </activity>
+        <activity
+            android:name=".activity.setting.SettingActivity"
+            android:theme="@style/MyAppTheme">
+
+        </activity>
+        <activity
+            android:name=".activity.setting.activity_setting.AboutUsActivity"
+            android:theme="@style/MyAppTheme">
+
+        </activity>
+        <activity
+            android:name=".activity.setting.activity_setting.FeedBackActivity"
+            android:theme="@style/MyAppTheme">
+
+        </activity>
+        <activity
+            android:name=".activity.accountLogin.AccountLoginActivity"
+            android:theme="@style/MyAppTheme">
+
+        </activity>
+        <activity
+            android:name=".activity.accountLogin.AccountRegisterActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MyAppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".activity.accountLogin.FindPasswordActivity"
+            android:theme="@style/MyAppTheme">
+
+        </activity>
+        <activity android:name=".activity.signIntegralSale.signIn.SignInActivity">
+
+        </activity>
+        <activity android:name=".activity.signIntegralSale.myIntegral.MyIntegralActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.message.MessageActivity"
+            android:theme="@style/MyAppTheme" />
+
+        <activity
+            android:name=".activity.shippingAddress.AddressListActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".activity.shippingAddress.AddAddressActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".activity.shippingAddress.ShowMapActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".headUpload.ClipImageActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".activity.enjoyBigBrand.EnhoyBBrandActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".activity.voucherCenter.VoucherCenterActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".activity.signIntegralSale.myIntegral.MemberRightsActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".activity.InvitingFriends.InvitingFriendsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".activity.earnIntegral.EarnIntegralActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".activity.signIntegralSale.mySale.MySaleActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".activity.enjoyBigBrand.BigBrandActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity android:name=".activity.shippingAddress.permissions.PermissionsActivity" />
+        <activity
+            android:name=".activity.shippingAddress.DialogActivity"
+            android:theme="@style/MyAppThemeTwo" />
+
+    </application>
+
+</manifest>

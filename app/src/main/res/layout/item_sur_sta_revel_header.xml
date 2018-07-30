@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/F0F0F0"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_header_icon"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:src="@drawable/banner_cdj" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/c333333"
+            android:textSize="16sp"
+            tools:text="[周周抽奖]" />
+
+        <TextView
+            android:id="@+id/tv_activtiy_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/activity_rules"
+            android:gravity="center"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:textColor="@color/FFFFFF"
+            android:textSize="14sp"
+            tools:text="活动规则" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_period_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        tools:text="第ZZ180801期  开奖日期：08月07日" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/E5E5E5" />
+</LinearLayout>

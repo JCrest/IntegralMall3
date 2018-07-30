@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--android:listSelector="@android:color/transparent"
+    listView,gridView 点击变灰（取消）
+    -->
+
+    <GridView
+        android:id="@+id/gv_index"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="5" />
+
+</RelativeLayout>

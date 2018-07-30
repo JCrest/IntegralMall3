@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_list_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp">
+
+
+        <TextView
+            android:id="@+id/my_noticeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_noticeTitle"
+            android:textColor="@color/my_messageTitle"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/my_noticeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+
+            android:src="@drawable/bg_hdgg_two" />
+
+        <TextView
+            android:id="@+id/my_noticeDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lines="2"
+            android:text="@string/my_noticeDes"
+            android:textColor="@color/my_messageTitle"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/my_noticeData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/my_messageData"
+            android:textColor="@color/my_messageData"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/cutting_line" />
+
+        <TextView
+            android:id="@+id/my_immediately_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="13dp"
+            android:text="@string/my_immediately_check"
+            android:textColor="@color/my_messageTitle"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+

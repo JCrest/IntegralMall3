@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">IntegralMall</string>
+
+    <string name="affirm">确认</string>
+
+    <string name="register">注册</string>
+    <string name="account_reg">账户注册</string>
+    <string name="phone_num">手机号</string>
+    <string name="en_phonum">请输入您的手机号码</string>
+    <string name="identifying_code">验证码</string>
+    <string name="en_identifyc">请输入验证码</string>
+    <string name="sen_idecode">发送验证码</string>
+    <string name="login_code">登陆密码</string>
+    <string name="enter_lcode">请输入登陆密码</string>
+    <string name="affirm_login_code">确认登陆密码</string>
+    <string name="enter_alcode">请再次输入登陆密码</string>
+    <string name="tv_invitation_code">邀请码</string>
+    <string name="ev_invitation_code">请输入邀请码（选填）</string>
+
+    <string name="find_password">找回密码</string>
+    <string name="new_login_code">新登陆密码</string>
+    <string name="enter_nlcode">请输入新登陆密码</string>
+    <string name="affirm_new_login_code">确认新登陆密码</string>
+    <string name="enter_anlcode">请再次输入新登陆密码</string>
+
+    <string name="change_pwd">修改密码</string>
+    <string name="old_pwd">旧密码</string>
+    <string name="ent_old_pwd">请输入原登陆密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="ent_new_pwd">请输入6~8位新密码</string>
+    <string name="confrim_pwd">确认密码</string>
+    <string name="ent_con_pwd">请再次输入6~8位新密码</string>
+    <string name="forget_pwd">忘记密码？</string>
+
+    <string name="sign_in">签到</string>
+    <string name="mall_more_welfare">更多福利</string>
+    <string name="mall_head_today">今日</string>
+    <string name="mall_head_count">123456</string>
+    <string name="mall_head_signed">人已签到</string>
+    <string name="mall_cal_sig_num">本月已累计签到5天</string>
+    <string name="mall_click_sign">点击签到</string>
+
+    <string name="my_integral_tit">我的积分</string>
+    <string name="total_integral">总积分：12340</string>
+    <string name="signed_integral">签到\n+2积分</string>
+    <string name="integral_rule">积分规则</string>
+    <string name="earn_points">赚积分</string>
+    <string name="lottery">抽大奖</string>
+    <string name="against_the_present">兑好礼</string>
+    <string name="integral_bills">积分账单</string>
+    <string name="wonderful_activity">精彩活动</string>
+    <string name="gv_product_name">SK-II 护肤精华露\n（神仙水®）</string>
+    <string name="gv_integral_price">1000</string>
+    <string name="gv_tv_integral_l">积分(剩余</string>
+    <string name="gv_integral_num">20</string>
+    <string name="gv_tv_integral_r">份)</string>
+    <string name="immediately_change">立即兑换</string>
+    <string name="disable_change">补货中</string>
+    <string name="my_messageTitle">礼品派送！</string>
+    <string name="my_messageDes">恭喜，您参见大转盘活动赢取的保温杯 已派送！记得每日来签到哦～～</string>
+    <string name="my_messageData">2018-5-20  16:12</string>
+    <string name="my_noticeTitle">每日签到送积分，好礼享不停！</string>
+    <string name="my_noticeDes">会员可以通过邀请自己的好友得到积分、礼品等，邀请不限次数，可累计更多积分～～</string>
+    <string name="my_immediately_check">立即查看</string>
+    <string name="default_address">默认地址</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="shipping_address">收货地址：</string>
+    <string name="shipping_click_select">点击选择</string>
+    <string name="new_add_address">新添地址</string>
+    <string name="save_address">保存地址</string>
+    <string name="et_shipping_address">请输入您的收货地址</string>
+
+
+    <string name="home_menu_zjf">赚积分</string>
+    <string name="home_menu_czzx">充值中心</string>
+    <string name="home_menu_xdp">享大牌</string>
+    <string name="home_menu_mrqd">每日签到</string>
+    <string name="home_menu_fl">分类</string>
+    <string name="home_libao_title">1分抽大奖</string>
+    <string name="home_libao_des">大牌商品刷爆人品</string>
+    <string name="home_jfqu_title">9分特享专区</string>
+    <string name="home_jfqu_des">小积分淘特权VIP</string>
+    <string name="enjoy_view_more"><![CDATA[查看更多 >]]></string>
+    <string name="tv_is_call">是否拨打客服热线</string>
+    <string name="tv_work_time">(服务时间：工作日09:00-18:00)</string>
+    <string name="tv_cancel">取消</string>
+    <string name="tv_confirm">确定</string>
+
+
+</resources>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>邀请好友</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0,minimal-ui"><!--禁止用户缩放屏幕 -->
+    <style media="screen">
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      html,body{
+        height: 100%;
+        background: #A6F2FF;
+      }
+      header{
+        width: 100%;
+        height: 720px;
+        background: url('./imgs/head_bg.png') no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+      }
+      .activeTime{
+        position: absolute;
+        color: #fff;
+        top: 192px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 13px;
+      }
+      .headContent{
+        width: 90%;
+        height: 685px;
+        margin: 0 auto;
+        position: absolute;
+        top: 320px;
+        left: 0;
+        right: 0;
+        background: url('./imgs/head_content.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .inviteNum1{
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 18px;
+      }
+      .inviteNum2{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        line-height: 44px;
+      }
+      .headMain{
+        width: 85%;
+        height: 548px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 110px;
+        margin: 0 auto;
+      }
+      .invite_gift{
+        text-align: center;
+        width: 100%;
+        height: 33%;
+        overflow: hidden;
+      }
+      .invite_gift .invite_title{
+        height: 50px;
+        line-height: 50px;
+      }
+      .invite_gift img{
+        width: 7px;
+        vertical-align: middle;
+      }
+      .invite_content{
+        width: 100%;
+        height: 130px;
+      }
+      .aiqiyiVip_div{
+        width: 47%;
+        color: #fff;
+        float: left;
+        margin: 0 20px;
+      }
+      .aiqiyiVip_div img{
+        width: 100%;
+        margin:  0 auto;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .fiftyJifen_div{
+        width: 26%;
+        color: #fff;
+        float: left;
+      }
+      .fiftyJifen_div img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .xianjinquan{
+        width: 90%;
+        margin: 0 auto;
+        color: #fff;
+      }
+      .xianjinquan img{
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .huafeiquan{
+        width: 90%;
+        margin: 0 auto;
+        color: #fff;
+      }
+      .huafeiquan img{
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+      footer{
+        width: 100%;
+        height: 450px;
+        margin-top: 320px;
+        overflow: hidden;
+      }
+      .invite_rule{
+        width: 90%;
+        height: 100%;
+        background: url('./imgs/rule_bg.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto;
+        color: #fff;
+        overflow: hidden;
+      }
+      .rule_content{
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        margin-top: 50%;
+        transform: translateY(-30%);
+        font-size: 14px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p class="activeTime"><span>活动时间：</span><span class="activeTime_num">2018.7.1-2019.7.1</span></p>
+      <div class="headContent">
+        <span class="inviteNum1">您的邀请码</span>
+        <span class="inviteNum2">NO.123456</span>
+        <div class="headMain">
+          <div class="invite_gift">
+            <p class="invite_title">
+              <img src="./imgs/quan_yellow.png" alt="">
+              <img src="./imgs/quan_yellow.png" alt="">
+              <span>首邀礼</span>
+              <img src="./imgs/quan_yellow.png" alt="">
+              <img src="./imgs/quan_yellow.png" alt="">
+            </p>
+            <div class="invite_content">
+              <div class="aiqiyiVip_div">
+                <img src="./imgs/aiqiyiVIP.png" alt="">
+                <span>7天会员卡免费送</span>
+              </div>
+              <div class="fiftyJifen_div">
+                <img src="./imgs/jifen.png" alt="">
+                <span>+50积分</span>
+              </div>
+            </div>
+          </div>
+          <div class="invite_gift">
+            <p class="invite_title">
+              <img src="./imgs/quan_yellow.png" alt="">
+              <img src="./imgs/quan_yellow.png" alt="">
+              <span>成功邀请5人</span>
+              <img src="./imgs/quan_yellow.png" alt="">
+              <img src="./imgs/quan_yellow.png" alt="">
+            </p>
+            <div class="xianjinquan">
+              <img src="./imgs/xjq.png" alt="">
+              <span>无门槛任意用现金券*1</span>
+            </div>
+          </div>
+          <div class="invite_gift">
+            <p class="invite_title">
+              <img src="./imgs/quan_yellow.png" alt="">
+              <img src="./imgs/quan_yellow.png" alt="">
+              <span>成功邀请10人</span>
+              <img src="./imgs/quan_yellow.png" alt="">
+              <img src="./imgs/quan_yellow.png" alt="">
+            </p>
+            <div class="huafeiquan">
+              <img src="./imgs/hfq.png" alt="">
+              <span>100元话费券*1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <div class="invite_rule">
+        <div class="rule_content">
+          <h3>活动时间</h3>
+          <p>2018年7月起</p>
+          <br>
+          <h3>活动规则</h3>
+          <p>1、好友必须通过邀请人发出的专属邀请码注册成功，邀请人才视为邀请成功；</p><br>
+          <p>2、成功邀请1人可获得7天爱奇艺会员卡*1和50积分奖励；成功邀请5人可获得50元无门槛任意用现金券一张；成功邀请10人可获得100元话费券一张；</p><br>
+          <p>3、活动期间，每份礼品仅能限领一次；</p><br>
+          <p>4、在法律允许的范围内，我方拥有对本次活动的解释权，并有权根据需要取消活动或增删、修订本活动规则的条款。</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
